@@ -1,5 +1,6 @@
 import './App.css';
 import ExploreSection from './components/ExploreSection';
+import AboutUsSection from './components/AboutUsSection';
 import Header from './components/Header';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <div className="container">
         <ExploreSection />
+        <AboutUsSection />
       </div>
     </div>
   );

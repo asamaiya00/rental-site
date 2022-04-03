@@ -176,8 +176,9 @@ label {
   margin: auto;
 }
 
-#explore {
-  height: 100vh;
+#explore,
+#about-us {
+  height: 75vh;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
@@ -232,7 +233,7 @@ h5 {
   padding: 0.5rem 2rem;
   bottom: 0;
   width: 80%;
-  transform: translate(5%, -100%);
+  transform: translate(5%, -50%);
   display: flex;
   gap: 2rem;
 }
@@ -255,6 +256,36 @@ h5 {
   height: 50%;
   bottom: 0.5rem;
   right: 10%;
+}
+
+.chapters-gallery {
+  font-family: 'Ubuntu';
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 4rem;
+}
+
+.story-container {
+  min-width: 100%;
+  min-height: 50rem;
+}
+
+.story {
+}
+
+.story img {
+  border-radius: 25px;
+  margin-top: 2rem;
+}
+
+.info h4 {
+  width: 70%;
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.info p {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px) {
