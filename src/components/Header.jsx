@@ -4,6 +4,10 @@ import search from '../assets/search.svg';
 import down from '../assets/down.svg';
 
 const Header = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <header>
       <nav>
@@ -19,7 +23,7 @@ const Header = () => {
       </nav>
       <h1> Rethink your living & renting</h1>
       <h3>Make your stay painless with us</h3>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className="form-container">
           <div className="form-input">
             <label htmlFor="city">City</label>

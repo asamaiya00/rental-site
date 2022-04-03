@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Ubuntu&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +50,7 @@ nav {
 
 a {
   color: white;
-  margin-right: 4rem;
+  margin-right: 8rem;
   font-size: 1.5rem;
 }
 
@@ -62,6 +62,7 @@ input {
   outline: none;
   border-radius: 10px;
   padding: 0.5rem 2rem;
+  cursor: pointer;
 }
 
 .call-btn {
@@ -174,6 +175,7 @@ label {
 .container {
   width: 90%;
   margin: auto;
+  position: relative;
 }
 
 #explore,
@@ -270,9 +272,6 @@ h5 {
   min-height: 50rem;
 }
 
-.story {
-}
-
 .story img {
   border-radius: 25px;
   margin-top: 2rem;
@@ -288,6 +287,37 @@ h5 {
   font-size: 1.2rem;
 }
 
+#about-us {
+  height: 230vh;
+}
+
+footer {
+  height: 5vh;
+  margin: 1rem 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer #logo {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: black;
+  margin-right: 16rem;
+  font-weight: 500;
+}
+
+footer .btn {
+  border: 3px solid black;
+}
 @media screen and (max-width: 600px) {
   #logo {
     width: 10rem;
