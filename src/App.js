@@ -1,13 +1,14 @@
 import './App.css';
+import ExploreSection from './components/ExploreSection';
 import Header from './components/Header';
 
 function App() {
   return (
     <div>
       <Header />
-      <section>
-        <h2>Explore</h2>
-      </section>
+      <div className="container">
+        <ExploreSection />
+      </div>
     </div>
   );
 }

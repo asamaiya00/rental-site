@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Ubuntu&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
   z-index: 1;
+  scroll-behavior: smooth;
 }
 header {
   color: white;
@@ -14,18 +13,17 @@ header {
   /* background-color: rgba(0, 0, 0, 0.9); */
   background-size: 100%;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   /* align-items: center; */
 }
 
 header::before {
   content: '';
-  width: 100%;
-  height: 100%;
+  width: 99vw;
+  height: 100vh;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.25);
@@ -83,7 +81,7 @@ h1 {
   line-height: 110%;
 }
 
-h2 {
+h3 {
   font-family: 'Ubuntu', sans-serif;
   margin: auto;
   margin-top: 1rem;
@@ -99,8 +97,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
+
 .form-container {
   text-align: center;
   display: flex;
@@ -150,6 +149,12 @@ label {
   opacity: 1;
 }
 
+.btn-gradient {
+  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+  font-family: 'Ubuntu';
+  font-weight: bold;
+}
+
 .btn-search {
   margin-left: 2rem;
   font-family: 'Ubuntu';
@@ -160,11 +165,96 @@ label {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
   border-radius: 1rem;
   height: 4.5rem;
   width: 20%;
   color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#explore {
+  height: 100vh;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+}
+
+h5 {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 1.2rem;
+  width: 20%;
+}
+
+.card-gallery {
+  display: flex;
+  width: 90vw;
+  height: 70vh;
+  gap: 5rem;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 25px;
+  /* position: relative; */
+}
+
+.info-panel {
+  /* position: absolute; */
+  background: linear-gradient(
+    94.33deg,
+    rgba(255, 255, 255, 0.6) 3.19%,
+    rgba(255, 255, 255, 0.1) 99.26%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  bottom: 0;
+  width: 80%;
+  transform: translate(5%, -100%);
+  display: flex;
+  gap: 2rem;
+}
+
+.info {
+  padding: 0;
+}
+
+.info h5 {
+  width: 100%;
+  padding-block: 1rem;
+}
+
+.btn-info {
+  margin: 0 3rem 0 0;
+}
+
+.btn-book {
+  position: absolute;
+  height: 50%;
+  bottom: 0.5rem;
+  right: 10%;
 }
 
 @media screen and (max-width: 600px) {

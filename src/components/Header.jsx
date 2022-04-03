@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import search from '../assets/search.svg';
+import down from '../assets/down.svg';
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
         </div>
       </nav>
       <h1> Rethink your living & renting</h1>
-      <h2>Make your stay painless with us</h2>
+      <h3>Make your stay painless with us</h3>
       <form>
         <div className="form-container">
           <div className="form-input">
@@ -32,12 +33,15 @@ const Header = () => {
             <label htmlFor="guests">Guests</label>
             <input name="guests" type="text" placeholder="Add guests" />
           </div>
-          <button className="btn btn-search">
+          <button className="btn btn-search btn-gradient">
             <img src={search} alt="" />
             Search
           </button>
         </div>
       </form>
+      <a href="#explore" style={{ marginBottom: '15px', textAlign: 'center' }}>
+        <img src={down} height="30px" alt="down arrow" />
+      </a>
     </header>
   );
 };
