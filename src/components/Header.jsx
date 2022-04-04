@@ -40,7 +40,12 @@ const Header = () => {
           </div>
           <div className="form-input">
             <label htmlFor="guests">Guests</label>
-            <input name="guests" type="text" placeholder="Add guests" />
+            <input
+              name="guests"
+              type="number"
+              min={1}
+              placeholder="Add guests"
+            />
           </div>
           <button className="btn btn-search btn-gradient">
             <img src={search} alt="" />
