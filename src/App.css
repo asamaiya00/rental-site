@@ -458,7 +458,7 @@ footer .btn {
     height: 400vh;
   }
   footer {
-    height: 25vh;
+    height: 40vh;
     max-width: 100%;
     display: flex;
     flex-direction: column-reverse;
