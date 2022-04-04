@@ -2,24 +2,29 @@ import React from 'react';
 import logo from '../assets/logo.svg';
 import search from '../assets/search.svg';
 import down from '../assets/down.svg';
+import menu from '../assets/menu.svg';
 
 const Header = () => {
   const onSubmit = (e) => {
     e.preventDefault();
   };
 
+  const toggleMenu = () => {
+    document.getElementById('links').classList.toggle('show');
+  };
   return (
     <header>
       <nav>
         <img id="logo" src={logo} alt="Company Logo" />
-        <div className="links">
+        <div id="links" className="links">
           <a href="#explore">Explore</a>
           <a href="#about-us">About us</a>
           <a href="#">Cities</a>
-          <button className="btn call-btn" style={{ color: 'white' }}>
+          <button className="btn btn-call" style={{ color: 'white' }}>
             Call
           </button>
         </div>
+        <img onClick={toggleMenu} id="menu" src={menu} alt="mobile menu" />
       </nav>
       <h1> Rethink your living & renting</h1>
       <h3>Make your stay painless with us</h3>
